@@ -41,11 +41,38 @@ footer
 
 .tagLine
 {
+	float: left;
 	font-size: 18pt;
 	color: hsl(224, 72%, 17%);
-	display: table-cell;
-	vertical-align: middle;
-	padding: 10px;
+	line-height: 60px;
+	margin: 0 50px 0 20px;
+}
+
+/* Navigation styles */
+.navListItem
+{
+	float: left;
+	width: auto;
+	height: 100%;
+	margin: 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 60px;
+	padding: 0px 10px;
+	font-size: 14pt;
+	color: hsl(224, 72%, 17%);
+	z-index: 10;
+}
+
+.navListItem:visited
+{
+	color: hsl(224, 72%, 17%);
+}
+
+.navListItem:hover
+{
+	color: hsl(224, 72%, 50%);
+	background: hsl(0, 0%, 18%);
 }
 
 
