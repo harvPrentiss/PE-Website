@@ -1,0 +1,56 @@
+body 
+{
+	background-color: hsl(0, 0%, 18%);
+}
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 50px;
+	background-color: hsl(0, 0%, 80%);
+}
+
+footer
+{
+	width: 100%;
+}
+
+#contentContainer
+{
+	width: 95%;
+	margin: 10px auto;
+}
+.logo
+{
+	display: block;
+	float: left;
+	background: url(../Images/PELogoSprite.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	text-indent: -9999px;
+	border-right: 3px solid hsl(224, 72%, 17%);
+	margin-left: 5px;
+}
+
+.logo:hover{
+	background-position: 0 -50px;
+}
+
+.tagLine
+{
+	font-size: 18pt;
+	color: hsl(224, 72%, 17%);
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
