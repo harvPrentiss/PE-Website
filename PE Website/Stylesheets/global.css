@@ -1,6 +1,8 @@
 body 
 {
 	background-color: hsl(0, 0%, 18%);
+	font-size: 14pt;
+	color: white;
 }
 
 header
@@ -21,13 +23,14 @@ footer
 #contentContainer
 {
 	width: 95%;
-	margin: 10px auto;
+	margin: 60px auto;
+	padding: 10px;
 }
 .logo
 {
 	display: block;
 	float: left;
-	background: url(../Images/PELogoSprite.png) no-repeat;
+	background: url(../Images/PELogoSprite2.png) no-repeat;
 	width: 50px;
 	height: 50px;
 	text-indent: -9999px;
@@ -73,6 +76,19 @@ footer
 {
 	color: hsl(224, 72%, 50%);
 	background: hsl(0, 0%, 18%);
+}
+
+.banner{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	height: 150px;
+	width: auto;
+}
+
+.centerContainer{
+	text-align: center;
+	margin: 10px auto;
 }
 
 

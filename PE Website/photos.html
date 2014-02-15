@@ -1,12 +1,12 @@
 <!DOCTYPE>
 <html>
-
 	<head class="group">
 		<link rel="stylesheet" href="Stylesheets/reset.css"/>
 		<link rel="stylesheet" href="Stylesheets/global.css"/>
+		<script src="Javascript/slideshow.js"></script>
 	</head>
 
-	<body>
+	<body onLoad="switchImage('slideShow')">
 		<header>
 			<a class="logo" href="index.html">Prentiss Electric</a>
 			<p class="tagline">PRENTISS ELECTRIC</p>
@@ -16,17 +16,17 @@
 					<li><a href="" class="navListItem">About Us</a></li>
 					<li><a href="" class="navListItem">Contact</a></li>
 					<li><a href="" class="navListItem">Testimonials</a></li>
-					<li><a href="photos.html" class="navListItem">Photos</a></li>
+					<li><a href="" class="navListItem">Photos</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<div id="contentContainer">
-			<img class="banner" src="" alt="Banner"/>
-
-			<div class="centerContainer">
-				<p>Introduction text explaining what Prentiss Electric is and what they do.</p>
-			</div>
+			<img id="slideShow" src="" />
+			<a href="#" onClick="switchImage('slideImg')">Play</a>
+			<a href="#" onClick="clearTimeout(timerID)">Pause</a>
+			<a href="#" onClick="prevImage('slideImg'); clearTimeout(timerID)"> Previous</a>
+			<a href="#" onClick="switchImage('slideImg'); clearTimeout(timerID)"> Next</a>
 		</div>
 
 		<footer>
