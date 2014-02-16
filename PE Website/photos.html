@@ -23,10 +23,13 @@
 
 		<div id="contentContainer">
 			<img id="slideShow" src="" />
-			<a href="#" onClick="switchImage('slideImg')">Play</a>
-			<a href="#" onClick="clearTimeout(timerID)">Pause</a>
-			<a href="#" onClick="prevImage('slideImg'); clearTimeout(timerID)"> Previous</a>
-			<a href="#" onClick="switchImage('slideImg'); clearTimeout(timerID)"> Next</a>
+
+			<div class="controls">
+				<a href="#" onClick="play('slideShow')">Play</a>
+				<a href="#" onClick="pause()">Pause</a>
+				<a href="#" onClick="prevImage('slideShow'); clearTimeout(timerID)"> Previous</a>
+				<a href="#" onClick="switchImage('slideShow'); clearTimeout(timerID)"> Next</a>
+			</div>
 		</div>
 
 		<footer>

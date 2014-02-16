@@ -1,12 +1,10 @@
-body 
-{
+body {
 	background-color: hsl(0, 0%, 18%);
 	font-size: 14pt;
 	color: white;
 }
 
-header
-{
+header{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,19 +13,16 @@ header
 	background-color: hsl(0, 0%, 80%);
 }
 
-footer
-{
+footer{
 	width: 100%;
 }
 
-#contentContainer
-{
+#contentContainer{
 	width: 95%;
 	margin: 60px auto;
 	padding: 10px;
 }
-.logo
-{
+.logo{
 	display: block;
 	float: left;
 	background: url(../Images/PELogoSprite2.png) no-repeat;
@@ -42,8 +37,7 @@ footer
 	background-position: 0 -50px;
 }
 
-.tagLine
-{
+.tagLine{
 	float: left;
 	font-size: 18pt;
 	color: hsl(224, 72%, 17%);
@@ -52,8 +46,7 @@ footer
 }
 
 /* Navigation styles */
-.navListItem
-{
+.navListItem{
 	float: left;
 	width: auto;
 	height: 100%;
@@ -67,13 +60,11 @@ footer
 	z-index: 10;
 }
 
-.navListItem:visited
-{
+.navListItem:visited{
 	color: hsl(224, 72%, 17%);
 }
 
-.navListItem:hover
-{
+.navListItem:hover{
 	color: hsl(224, 72%, 50%);
 	background: hsl(0, 0%, 18%);
 }
@@ -96,4 +87,21 @@ footer
   content: "";
   display: table;
   clear: both;
+}
+
+
+/* Photos Page styles */
+
+#slideshow{
+	display: block;
+	margin: 5px auto;
+	padding: 0;
+	border: 2px inset white;
+}
+
+.controls{
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
 }

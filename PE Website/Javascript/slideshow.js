@@ -1,9 +1,10 @@
-var interval = 2000;
+var interval = 3500;
 var random_display = 0;
 var imageDir = "Images/";
 
 
 var imageNum = 0;
+var paused = false;
 
 function imageItem(image_location){
 	this.image_item = new Image();
@@ -36,7 +37,10 @@ function getNextImage(){
 		imageNum = randNum(0, totalImages-1);
 	}
 	else{
-		imageNum = (imageNum + 1) % totalImages;
+		imageNum++;
+		if(imageNum > totalImages - 1){
+			imageNum = 0;
+		}
 	}
 
 	var new_image = get_ImageItemLocation(imageArray[imageNum]);
@@ -44,7 +48,12 @@ function getNextImage(){
 }
 
 function getPrevImage(){
+	if(imageNum - 1 < 0){
+		imageNum = totalImages - 1;
+	}
+	else{
 	imageNum = (imageNum-1 % totalImages);
+	}
 	var new_image = get_ImageItemLocation(imageArray[imageNum]);
 	return new_image;
 }
@@ -56,8 +65,19 @@ function prevImage(place){
 
 function switchImage(place){
 	var new_image = getNextImage();
-	console.log(place);
 	document.getElementById(place).src = new_image;
 	var recur_call = "switchImage('"+place+"')";
-	timerId = setTimeout(recur_call, interval);
+	timerID = setTimeout(recur_call, interval);
+}
+
+function play(place){
+	if(paused){
+		switchImage(place);
+		paused = false;
+	}
+}
+
+function pause(){
+	clearTimeout(timerID);
+	paused = true;
 }
