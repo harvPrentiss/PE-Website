@@ -7,16 +7,20 @@
 	</head>
 
 	<body onLoad="switchImage('slideShow')">
-		<header>
-			<a class="logo" href="index.html">Prentiss Electric</a>
-			<p class="tagline">PRENTISS ELECTRIC | ELECTRICAL CONTRACTING</p>
+		<header class="group">
+			<div class="logoTag group">
+				<a class="logo" href="index.html">Prentiss Electric</a>
+				<div class="logoRightBox">
+					<p class="tagline">PRENTISS ELECTRIC <br> ELECTRICAL CONTRACTING</p>
+				</div>
+			</div>
 
 			<nav class="nav">
 				<ul>
 					<li><a href="" class="navListItem">About Us</a></li>
 					<li><a href="" class="navListItem">Contact</a></li>
 					<li><a href="" class="navListItem">Testimonials</a></li>
-					<li><a href="" class="navListItem">Photos</a></li>
+					<li><a href="photos.html" class="navListItem">Photos</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -24,12 +28,17 @@
 		<div id="contentContainer">
 			<img id="slideShow" src="" />
 
-			<div class="controls">
-				<a href="#" onClick="play('slideShow')">Play</a>
-				<a href="#" onClick="pause()">Pause</a>
-				<a href="#" onClick="prevImage('slideShow'); clearTimeout(timerID)"> Previous</a>
-				<a href="#" onClick="switchImage('slideShow'); clearTimeout(timerID)"> Next</a>
-			</div>
+			<menu>
+				<button class="rw" onClick="prevImage('slideShow'); clearTimeout(timerID)">
+					<div class="rev1"></div><div class="rev2"></div>
+				</button>
+
+				<button class="play" onClick="play('slideShow')"></button>
+
+				<button class="ff" onClick="switchImage('slideShow'); clearTimeout(timerID)">
+					<div class="forward1"></div><div class="forward2"></div>
+				</button>
+			</menu>
 		</div>
 
 		<footer>
