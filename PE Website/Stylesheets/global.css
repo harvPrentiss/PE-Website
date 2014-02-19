@@ -1,16 +1,37 @@
+html{
+	height: 100%;
+}
+
 body {
-	background-color: hsl(0, 0%, 18%);
+	background-color: hsl(0, 0%, 28%);
 	font-size: 14pt;
 	color: white;
+	height: 100%;
+	width: 100%;
 }
 
 header{
-	position: fixed;
-	top: 0;
-	left: 0;
+	display: block;
+	margin: 5px auto;
 	width:100%;
-	height: 50px;
-	background-color: hsl(0, 0%, 80%);
+	height: auto;
+}
+
+nav{
+	text-align: center;
+	width: 100%;
+	height: 60px;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+nav ul li{
+	display: inline;
 }
 
 footer{
@@ -18,46 +39,47 @@ footer{
 }
 
 #contentContainer{
-	width: 95%;
+	width: 85%;
 	margin: 60px auto;
 	padding: 10px;
 }
+
 .logo{
 	display: block;
-	float: left;
-	background: url(../Images/PELogoSprite2.png) no-repeat;
-	width: 50px;
-	height: 50px;
+	background: url(../Images/PELogoSprite.png) no-repeat;
+	width: 200px;
+	height: 200px;
 	text-indent: -9999px;
-	border-right: 3px solid hsl(224, 72%, 17%);
-	margin-left: 5px;
+	margin: 5px auto 10px auto;
 }
 
 .logo:hover{
-	background-position: 0 -50px;
+	background-position: 0 -200px;
 }
 
 .tagLine{
-	float: left;
 	font-size: 18pt;
 	color: hsl(224, 72%, 17%);
-	line-height: 60px;
-	margin: 0 50px 0 20px;
+	margin: 5px auto;
+	text-align: center;
 }
 
 /* Navigation styles */
 .navListItem{
-	float: left;
+	display: inline-block;
 	width: auto;
-	height: 100%;
-	margin: 0px 10px;
+	height: auto;
+	margin: 0px 5px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 60px;
 	padding: 0px 10px;
 	font-size: 14pt;
 	color: hsl(224, 72%, 17%);
-	z-index: 10;
+	background: hsl(0, 0%, 38%);
+	border: 1px solid;
+	border-color: hsl(0, 0%, 38%);
+	border-radius: 5px;
 }
 
 .navListItem:visited{
