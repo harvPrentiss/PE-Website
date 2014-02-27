@@ -12,12 +12,11 @@ function imageItem(image_location){
 }
 
 var imageArray = new Array();
-imageArray[imageNum++] = new imageItem(imageDir + "01.png");
-imageArray[imageNum++] = new imageItem(imageDir + "02.png");
-imageArray[imageNum++] = new imageItem(imageDir + "03.png");
-imageArray[imageNum++] = new imageItem(imageDir + "04.png");
-imageArray[imageNum++] = new imageItem(imageDir + "05.png");
-imageArray[imageNum++] = new imageItem(imageDir + "06.png");
+imageArray[imageNum++] = new imageItem(imageDir + "01Medium.jpg");
+imageArray[imageNum++] = new imageItem(imageDir + "02Medium.jpg");
+imageArray[imageNum++] = new imageItem(imageDir + "03Medium.jpg");
+imageArray[imageNum++] = new imageItem(imageDir + "04Medium.jpg");
+imageArray[imageNum++] = new imageItem(imageDir + "05Medium.jpg");
 
 var totalImages = imageArray.length;
 
