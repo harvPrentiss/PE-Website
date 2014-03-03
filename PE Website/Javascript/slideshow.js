@@ -58,6 +58,8 @@ function getPrevImage(){
 }
 
 function prevImage(place){
+	clearTimeout(timerID);
+	timerID = setTimeout(recur_call, interval);
 	var new_image = getPrevImage();
 	document.getElementById(place).src = new_image;
 }
