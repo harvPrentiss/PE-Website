@@ -40,14 +40,14 @@ footer{
 
 #contentContainer{
 	width: 85%;
-	margin: 60px auto;
+	margin: 30px auto;
 	padding: 10px;
 }
 
 .logoTag{
 	margin: 5px auto;
 	padding: 0;
-	width: 550px;
+	width: 600px;
 	display: table;
 }
 
@@ -57,7 +57,7 @@ footer{
 	margin: 5px auto 10px auto;
 	height: 200px;
 	position: relative;
-	width: 250px;
+	width: 300px;
 }
 
 .logo{
@@ -75,7 +75,7 @@ footer{
 }
 
 .tagLine{
-	font-size: 18pt;
+	font-size: 16pt;
 	color: hsl(224, 72%, 17%);
 	text-align: center;
 	margin: 5px auto;
@@ -240,4 +240,57 @@ menu {
 	border-style: solid;
 	border-width: 10px 17.3px 10px 0;
 	border-color: transparent hsl(224, 72%, 17%) transparent transparent;
+}
+
+/* About Page styles */
+
+.aboutMain{
+	display: block;
+	margin: 10px auto;
+}
+
+.triplePhotoBox{
+	display: block;
+	width: 100%;
+	margin: 10px auto 0 auto;
+	text-align: center;
+}
+
+.aboutListItem{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 0 10px;
+	text-decoration: none;
+	color: #49A9BC;
+	z-index: 10;
+	text-indent: -9999px;
+}
+
+.HP{
+	background: url(../Images/hp3IconBlue.png) no-repeat;
+}
+
+.AP{
+	background: url(../Images/hp3IconGreen.png) no-repeat;
+}
+
+.EP{
+	background: url(../Images/hp3IconOrange.png) no-repeat;
+}
+
+.descriptionBox{
+	display: block;
+	width: 100%;
+	margin: 0 auto 10px auto;
+	text-align: center;
+}
+
+.centeredList{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.centeredList li{
+	display: inline;
 }
