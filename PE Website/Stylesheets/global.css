@@ -265,6 +265,13 @@ menu {
 	color: #49A9BC;
 	z-index: 10;
 	text-indent: -9999px;
+	background-position: 0 0;
+}
+
+.selected{
+	background-position: 0 -100px;
+	width: 250px;
+	height: 250px;
 }
 
 .HP{
@@ -284,6 +291,7 @@ menu {
 	width: 100%;
 	margin: 0 auto 10px auto;
 	text-align: center;
+	border: 2px solid white;
 }
 
 .centeredList{
