@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('a').on('click', function(obj){
+	$('div.triplePhotoBox').on('click', 'a', function(obj){
 		obj.preventDefault();
 		obj.stopPropagation();
 	    $('a').removeClass('selected');
