@@ -3,7 +3,7 @@ html{
 }
 
 body {
-	background-color: hsl(0, 0%, 28%);
+	background-color: hsl(0, 0%, 75%);
 	font-size: 14pt;
 	color: white;
 	height: 100%;
@@ -95,7 +95,7 @@ footer{
 	padding: 0px 10px;
 	font-size: 14pt;
 	color: hsl(224, 72%, 17%);
-	background: hsl(0, 0%, 38%);
+	background: hsl(0, 0%, 75%);
 	border: 1px solid;
 	border-color: hsl(0, 0%, 38%);
 	border-radius: 5px;
@@ -106,8 +106,8 @@ footer{
 }
 
 .navListItem:hover{
-	color: hsl(224, 72%, 50%);
-	background: hsl(0, 0%, 18%);
+	color: hsl(224, 72%, 27%);
+	background: hsl(0, 0%, 41%);
 }
 
 .banner{
@@ -287,10 +287,9 @@ menu {
 }
 
 .descriptionBox{
-	display: block;
-	width: 100%;
+	width: 600px;
+	padding: 10px;
 	margin: 0 auto 10px auto;
-	text-align: center;
 	border: 2px solid white;
 }
 
@@ -301,4 +300,13 @@ menu {
 
 .centeredList li{
 	display: inline;
+}
+
+/* Contact Page Styles */
+
+.emailSection{
+	display: inline-block;
+	padding: 10px;
+	background-color: hsl(0, 0%, 35%);
+	border: 1px inset hsl(0, 0%, 35%);
 }
