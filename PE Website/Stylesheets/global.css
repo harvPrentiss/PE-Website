@@ -3,9 +3,9 @@ html{
 }
 
 body {
-	background-color: hsl(0, 0%, 75%);
+	background-color: hsl(0, 0%, 80%);
 	font-size: 14pt;
-	color: white;
+	color: hsl(0, 0%, 15%);
 	height: 100%;
 	width: 100%;
 }
@@ -95,7 +95,7 @@ footer{
 	padding: 0px 10px;
 	font-size: 14pt;
 	color: hsl(224, 72%, 17%);
-	background: hsl(0, 0%, 75%);
+	background: hsl(0, 0%, 80%);
 	border: 1px solid;
 	border-color: hsl(0, 0%, 38%);
 	border-radius: 5px;
@@ -107,7 +107,7 @@ footer{
 
 .navListItem:hover{
 	color: hsl(224, 72%, 27%);
-	background: hsl(0, 0%, 41%);
+	background: hsl(0, 0%, 55%);
 }
 
 .banner{
@@ -161,7 +161,7 @@ menu {
 }
 
 .play:hover{
-	border-color: transparent transparent transparent #ffbf00;
+	border-color: transparent transparent transparent #C29100;
 }
 
 .pause1{
@@ -199,7 +199,7 @@ menu {
 }
 
 .ff:hover .forward1, .ff:hover .forward2{
-	border-color: transparent transparent transparent #ffbf00;
+	border-color: transparent transparent transparent #C29100;
 }
 
 .forward2{
@@ -227,7 +227,7 @@ menu {
 }
 
 .rw:hover .rev1, .rw:hover .rev2{
-	border-color: transparent #ffbf00 transparent transparent;
+	border-color: transparent #C29100 transparent transparent;
 }
 
 .rev2{
@@ -258,8 +258,8 @@ menu {
 
 .aboutListItem{
 	display: inline-block;
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	margin: 0 10px;
 	text-decoration: none;
 	color: #49A9BC;
@@ -269,7 +269,6 @@ menu {
 }
 
 .selected{
-	background-position: 0 -100px;
 	width: 250px;
 	height: 250px;
 }
@@ -287,10 +286,11 @@ menu {
 }
 
 .descriptionBox{
-	width: 600px;
+	width: 750px;
 	padding: 10px;
 	margin: 0 auto 10px auto;
-	border: 2px solid white;
+	border: 2px solid hsl(224, 72%, 17%);
+	display: none;
 }
 
 .centeredList{
@@ -307,6 +307,18 @@ menu {
 .emailSection{
 	display: inline-block;
 	padding: 10px;
-	background-color: hsl(0, 0%, 35%);
-	border: 1px inset hsl(0, 0%, 35%);
+	background-color: hsl(0, 0%, 55%);
+	border: 1px inset hsl(0, 0%, 55%);
+}
+
+.frmBtns{
+	background-color: hsl(0, 0%, 80%);
+	border: 2px solid hsl(0, 0%, 35%);
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.frmBtns:hover{
+	border-color: black;
+	background-color: hsl(0, 0%, 90%);
 }
