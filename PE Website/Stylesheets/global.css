@@ -250,7 +250,6 @@ menu {
 }
 
 .triplePhotoBox{
-	display: block;
 	width: 100%;
 	margin: 10px auto 0 auto;
 	text-align: center;
@@ -260,7 +259,7 @@ menu {
 	display: inline-block;
 	width: 250px;
 	height: 250px;
-	margin: 0 10px;
+	margin: 0 0;
 	text-decoration: none;
 	color: #49A9BC;
 	z-index: 10;
@@ -271,6 +270,25 @@ menu {
 .selected{
 	width: 250px;
 	height: 250px;
+}
+
+.personBox{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.pName{
+	box-sizing: border-box;
+	font-size: 16pt;
+	display: inline-block;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: hsl(0, 0%, 60%);
+	border: 1px solid hsl(0, 0%, 60%);
+	border-radius: 5px 5px 0 0;
 }
 
 .HP{
@@ -286,10 +304,12 @@ menu {
 }
 
 .descriptionBox{
-	width: 750px;
+	box-sizing: border-box;
+	width: 756px;
 	padding: 10px;
 	margin: 0 auto 10px auto;
 	border: 2px solid hsl(224, 72%, 17%);
+	border-radius: 0 0 5px 5px;
 	display: none;
 }
 
