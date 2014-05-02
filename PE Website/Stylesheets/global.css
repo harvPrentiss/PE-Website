@@ -153,25 +153,38 @@ menu {
   text-align: center;
   position: relative;
   height: 50px;
+  width: 800px;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.playBtn{
+	position: relative;
+	background-color: transparent;
+	border: none;
+	width: auto;
+}
+
+.playBtn:focus{
+	outline: 0;
 }
 
 .play{
 	background-color: transparent;
 	padding: 0;
-	margin: 2px;
+	margin: 0 2px;
 	width: 0px;
 	height: 0px;
 	border-style: solid;
 	border-width: 20px 0 20px 34.6px;
-	border-color: transparent transparent transparent hsl(224, 72%, 17%);
+	border-color: transparent transparent transparent gray;
 }
 
 .play:hover{
-	border-color: transparent transparent transparent #C29100;
+	border-color: transparent transparent transparent hsl(0, 99%, 14%);
 }
 
 .pause1{
-	border: 5px 10px hsl(224, 72%, 17%);
+	border: 5px 10px hsl(0, 99%, 14%);
 }
 
 .rw{
@@ -183,6 +196,10 @@ menu {
 	width: auto;
 }
 
+.rw:focus{
+	outline: 0;
+}
+
 .ff{
 	position: relative;
 	top: 35%;
@@ -190,6 +207,10 @@ menu {
 	border: none;
 	height: 40px;
 	width: auto;
+}
+
+.ff:focus{
+	outline: 0;
 }
 
 .forward1{
@@ -201,11 +222,11 @@ menu {
 	height: 0px;
 	border-style: solid;
 	border-width: 10px 0 10px 17.3px;
-	border-color: transparent transparent transparent hsl(224, 72%, 17%);
+	border-color: transparent transparent transparent gray;
 }
 
 .ff:hover .forward1, .ff:hover .forward2{
-	border-color: transparent transparent transparent #C29100;
+	border-color: transparent transparent transparent hsl(0, 99%, 14%);
 }
 
 .forward2{
@@ -217,7 +238,7 @@ menu {
 	height: 0px;
 	border-style: solid;
 	border-width: 10px 0 10px 17.3px;
-	border-color: transparent transparent transparent hsl(224, 72%, 17%);
+	border-color: transparent transparent transparent gray;
 }
 
 .rev1{
@@ -229,11 +250,11 @@ menu {
 	height: 0px;
 	border-style: solid;
 	border-width: 10px 17.3px 10px 0;
-	border-color: transparent hsl(224, 72%, 17%) transparent transparent;
+	border-color: transparent gray transparent transparent;
 }
 
 .rw:hover .rev1, .rw:hover .rev2{
-	border-color: transparent #C29100 transparent transparent;
+	border-color: transparent hsl(0, 99%, 14%) transparent transparent;
 }
 
 .rev2{
@@ -245,7 +266,7 @@ menu {
 	height: 0px;
 	border-style: solid;
 	border-width: 10px 17.3px 10px 0;
-	border-color: transparent hsl(224, 72%, 17%) transparent transparent;
+	border-color: transparent gray transparent transparent;
 }
 
 /* About Page styles */
@@ -292,9 +313,17 @@ menu {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background-color: hsl(0, 0%, 90%);
+	background-color: hsl(0, 99%, 14%);
+	border: 1px solid hsl(0, 0%, 90%);
+	border-radius: 5px 5px 0 0;
+	border-bottom: none;
 	
+	color: hsl(0, 0%, 90%);
+}
+
+.backFrontColorSwap{
 	color: hsl(0, 99%, 14%);
+	background-color: hsl(0, 0%, 90%); 
 }
 
 .HP{
@@ -311,10 +340,9 @@ menu {
 
 .descriptionBox{
 	box-sizing: border-box;
-	width: 756px;
+	width: 760px;
 	padding: 10px;
 	margin: 0 auto 10px auto;
-	border: 2px solid hsl(0, 99%, 14%);
 	background-color: hsl(0, 0%, 90%);
 	border-radius: 0 0 5px 5px;
 	display: none;
@@ -366,4 +394,22 @@ menu {
 .frmBtns:hover{	
 	border-color: hsl(0, 99%, 14%);
 	font-style: italic;
+}
+
+.notification{
+	font-size: 14pt;
+	font-style: italic;
+	background: hsl(0, 0%, 90%);
+}
+
+.waiting{
+	color: white;
+}
+
+.good{
+	color: green;
+}
+
+.bad{
+	color: red;
 }
