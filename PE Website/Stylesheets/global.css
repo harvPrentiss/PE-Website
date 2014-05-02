@@ -1,20 +1,23 @@
 html{
-	height: 100%;
+	
 }
 
 body {
 	background-color: hsl(0, 0%, 80%);
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
 	font-size: 14pt;
-	color: hsl(0, 0%, 15%);
-	height: 100%;
-	width: 100%;
 }
 
 header{
+	box-sizing: border-box;
 	display: block;
 	margin: 5px auto;
-	width:100%;
+	width: 80%;
 	height: auto;
+	background-color: hsl(0, 99%, 14%);
+	padding-bottom: 10px;
 }
 
 nav{
@@ -39,9 +42,12 @@ footer{
 }
 
 #contentContainer{
-	width: 85%;
+	box-sizing: border-box;
+	width: 80%;
 	margin: 30px auto;
-	padding: 10px;
+	padding: 15px;
+	background-color: hsl(0, 99%, 14%);
+	color: hsl(0, 0%, 90%);
 }
 
 .logoTag{
@@ -76,7 +82,7 @@ footer{
 
 .tagLine{
 	font-size: 16pt;
-	color: hsl(224, 72%, 17%);
+	color: hsl(0, 0%, 90%);
 	text-align: center;
 	margin: 5px auto;
 	position: absolute;
@@ -86,7 +92,7 @@ footer{
 /* Navigation styles */
 .navListItem{
 	display: inline-block;
-	width: auto;
+	min-width: 125px;
 	height: auto;
 	margin: 0px 5px;
 	text-align: center;
@@ -94,20 +100,20 @@ footer{
 	line-height: 60px;
 	padding: 0px 10px;
 	font-size: 14pt;
-	color: hsl(224, 72%, 17%);
-	background: hsl(0, 0%, 80%);
+	color: hsl(0, 99%, 14%);
+	background: hsl(0, 0%, 90%);
 	border: 1px solid;
-	border-color: hsl(0, 0%, 38%);
+	border-color: hsl(0, 0%, 90%);
 	border-radius: 5px;
 }
 
 .navListItem:visited{
-	color: hsl(224, 72%, 17%);
+	color: hsl(0, 99%, 14%);
 }
 
 .navListItem:hover{
-	color: hsl(224, 72%, 27%);
-	background: hsl(0, 0%, 55%);
+	font-style: italic;
+	border-color: hsl(0, 99%, 14%);
 }
 
 .banner{
@@ -286,9 +292,9 @@ menu {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background-color: hsl(0, 0%, 60%);
-	border: 1px solid hsl(0, 0%, 60%);
-	border-radius: 5px 5px 0 0;
+	background-color: hsl(0, 0%, 90%);
+	
+	color: hsl(0, 99%, 14%);
 }
 
 .HP{
@@ -308,9 +314,11 @@ menu {
 	width: 756px;
 	padding: 10px;
 	margin: 0 auto 10px auto;
-	border: 2px solid hsl(224, 72%, 17%);
+	border: 2px solid hsl(0, 99%, 14%);
+	background-color: hsl(0, 0%, 90%);
 	border-radius: 0 0 5px 5px;
 	display: none;
+	color: black;
 }
 
 .centeredList{
@@ -325,20 +333,37 @@ menu {
 /* Contact Page Styles */
 
 .emailSection{
+	box-sizing: border-box;
 	display: inline-block;
-	padding: 10px;
-	background-color: hsl(0, 0%, 55%);
-	border: 1px inset hsl(0, 0%, 55%);
+	padding: 5px;	
+	color: hsl(0, 0%, 90%);
+}
+
+.frmField{
+	background-color: hsl(0, 0%, 90%);
+	border: 2px solid hsl(0, 99%, 14%);
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+.frmField:focus{
+	outline: 0;
+	border-color: hsl(0, 0%, 90%);
 }
 
 .frmBtns{
-	background-color: hsl(0, 0%, 80%);
-	border: 2px solid hsl(0, 0%, 35%);
+	box-sizing: border-box;
+	min-width: 85px;
+	font-size: 14pt;
+	color: hsl(0, 99%, 14%);
+	background: hsl(0, 0%, 90%);
+	border: 1px solid;
+	border-color: hsl(0, 0%, 90%);
 	border-radius: 5px;
-	padding: 10px;
+	padding: 10px 10px;
 }
 
-.frmBtns:hover{
-	border-color: black;
-	background-color: hsl(0, 0%, 90%);
+.frmBtns:hover{	
+	border-color: hsl(0, 99%, 14%);
+	font-style: italic;
 }

@@ -3,53 +3,50 @@
 	<head class="group">
 		<link rel="stylesheet" href="Stylesheets/reset.css"/>
 		<link rel="stylesheet" href="Stylesheets/global.css"/>
+		<script src="Javascript/jquery-2.1.0.min.js"></script>
+		<script src="Javascript/emailer.js"></script>
 	</head>
 
 	<body>
-		<header class="group">
-			<div class="logoTag group">
-				<a class="logo" href="index.html">Prentiss Electric</a>
-				<div class="logoRightBox">
-					<p class="tagline">PRENTISS ELECTRIC LLC <br> ELECTRICAL CONTRACTING</p>
+			<header class="group">
+				<div class="logoTag group">
+					<a class="logo" href="index.html">Prentiss Electric</a>
+					<div class="logoRightBox">
+						<p class="tagline">PRENTISS ELECTRIC LLC <br> ELECTRICAL CONTRACTING</p>
+					</div>
+				</div>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="about.html" class="navListItem">About Us</a></li>
+						<li><a href="contact.html" class="navListItem">Contact</a></li>
+						<li><a href="" class="navListItem">Testimonials</a></li>
+						<li><a href="photos.html" class="navListItem">Photos</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div id="contentContainer" class="group">
+				
+
+				<div class="centerContainer" class="group">
+					<h1>Contact Info</h1>
+					<h2>Phone/Fax: (203)234-2611</h2>
+
+					<div class="emailSection">
+						<h2>Email Us</h2>
+						<!-- put in PHP emailer -->
+						<form action="#" method="POST">
+							Subject: <input class='frmField' type="text" id="subject" placeholder="Subject" required><br><br>
+							E-mail: <input class='frmField' type="text" id="email" placeholder="Your Email" required><br>
+							<br>
+							<textarea class='frmField' id="message" placeholder="Message..." rows="10" cols="50" required></textarea>
+							<br>
+							<input id="send" type="submit" value="Send" class="frmBtns">
+							<input type="reset" value="Reset" class="frmBtns">
+						</form>
+					</div>
 				</div>
 			</div>
-
-			<nav class="nav">
-				<ul>
-					<li><a href="about.html" class="navListItem">About Us</a></li>
-					<li><a href="contact.html" class="navListItem">Contact</a></li>
-					<li><a href="" class="navListItem">Testimonials</a></li>
-					<li><a href="photos.html" class="navListItem">Photos</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<div id="contentContainer">
-			
-
-			<div class="centerContainer">
-				<h1>Contact Info</h1>
-				<h2>Phone/Fax: (203)234-2611</h2>
-
-				<div class="emailSection">
-					<h2>Email Us</h2>
-					<!-- put in PHP emailer -->
-					<form action="MAILTO:prentisselectricllc@gmail.com" method="POST" enctype="text/plain">
-						Name: <input type="text" name="name" placeholder="Your Name" required><br>
-						E-mail: <input type="text" name="email" placeholder="Your Email" required><br>
-						Message:<br>
-						<textarea name="message" placeholder="Message..." rows="10" cols="50" required></textarea>
-						<br>
-						<input type="submit" value="Send" class="frmBtns">
-						<input type="reset" value="Reset" class="frmBtns">
-					</form>
-				</div>
-			</div>
-		</div>
-
-		<footer>
-
-		</footer>
-
 	</body>
 </html>

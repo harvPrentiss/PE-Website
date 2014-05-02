@@ -7,43 +7,38 @@
 	</head>
 
 	<body onLoad="switchImage('slideShow')">
-		<header class="group">
-			<div class="logoTag group">
-				<a class="logo" href="index.html">Prentiss Electric</a>
-				<div class="logoRightBox">
-					<p class="tagline">PRENTISS ELECTRIC LLC<br> ELECTRICAL CONTRACTING</p>
+			<header class="group">
+				<div class="logoTag group">
+					<a class="logo" href="index.html">Prentiss Electric</a>
+					<div class="logoRightBox">
+						<p class="tagline">PRENTISS ELECTRIC LLC<br> ELECTRICAL CONTRACTING</p>
+					</div>
 				</div>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="about.html" class="navListItem">About Us</a></li>
+						<li><a href="contact.html" class="navListItem">Contact</a></li>
+						<li><a href="" class="navListItem">Testimonials</a></li>
+						<li><a href="photos.html" class="navListItem">Photos</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div id="contentContainer" class="group">
+				<img id="slideShow" src="" />
+
+				<menu>
+					<button class="rw" onClick="prevImage('slideShow');">
+						<div class="rev1"></div><div class="rev2"></div>
+					</button>
+
+					<button class="play" onClick="play('slideShow')"></button>
+
+					<button class="ff" onClick="nextImage('slideShow');">
+						<div class="forward1"></div><div class="forward2"></div>
+					</button>
+				</menu>
 			</div>
-
-			<nav class="nav">
-				<ul>
-					<li><a href="about.html" class="navListItem">About Us</a></li>
-					<li><a href="contact.html" class="navListItem">Contact</a></li>
-					<li><a href="" class="navListItem">Testimonials</a></li>
-					<li><a href="photos.html" class="navListItem">Photos</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<div id="contentContainer">
-			<img id="slideShow" src="" />
-
-			<menu>
-				<button class="rw" onClick="prevImage('slideShow');">
-					<div class="rev1"></div><div class="rev2"></div>
-				</button>
-
-				<button class="play" onClick="play('slideShow')"></button>
-
-				<button class="ff" onClick="nextImage('slideShow');">
-					<div class="forward1"></div><div class="forward2"></div>
-				</button>
-			</menu>
-		</div>
-
-		<footer>
-
-		</footer>
-
 	</body>
 </html>
