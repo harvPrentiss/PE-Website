@@ -183,8 +183,14 @@ menu {
 	border-color: transparent transparent transparent hsl(0, 99%, 14%);
 }
 
-.pause1{
-	border: 5px 10px hsl(0, 99%, 14%);
+.pause{
+	width: 30px;
+	height: 30px;
+	background-color: gray;
+}
+
+.pause:hover{
+	background-color: hsl(0, 99%, 14%);
 }
 
 .rw{

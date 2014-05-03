@@ -1,84 +1,77 @@
 var interval = 3500;
-var random_display = 0;
 var imageDir = "Images/";
 
 
 var imageNum = 0;
 var paused = false;
-
-function imageItem(image_location){
-	this.image_item = new Image();
-	this.image_item.src = image_location;
-}
+var timer;
 
 var imageArray = new Array();
-imageArray[imageNum++] = new imageItem(imageDir + "01Medium.jpg");
-imageArray[imageNum++] = new imageItem(imageDir + "02Medium.jpg");
-imageArray[imageNum++] = new imageItem(imageDir + "03Medium.jpg");
-imageArray[imageNum++] = new imageItem(imageDir + "04Medium.jpg");
-imageArray[imageNum++] = new imageItem(imageDir + "05Medium.jpg");
+imageArray[imageNum++] = "01Medium.jpg";
+imageArray[imageNum++] = "02Medium.jpg";
+imageArray[imageNum++] = "03Medium.jpg";
+imageArray[imageNum++] = "04Medium.jpg";
+imageArray[imageNum++] = "05Medium.jpg";
+
+imageNum = 0;
 
 var totalImages = imageArray.length;
 
+$(document).ready(function(){
+	$('#slideShow').attr('src', imageDir + imageArray[imageNum]);
+	startShow();
 
+	$('.ff').on('click', function(){
+		nextImage();
+	});
 
-function get_ImageItemLocation(imageObj){
-	return(imageObj.image_item.src);
-}
+	$('.rw').on('click', function(){
+		prevImage();
+	});
 
-function randNum(x,y){
-	var range = y - x +1;
-	return Math.floor(Math.random() * range) + x;
-}
-
-function getNextImage(){
-	if(random_display){
-		imageNum = randNum(0, totalImages-1);
-	}
-	else{
-		imageNum++;
-		if(imageNum > totalImages - 1){
-			imageNum = 0;
+	$('.playBtn').on('click', function(){
+		if(paused){
+			startShow();
 		}
-	}
+		else{
+			stopShow();
+		}
+	})
 
-	var new_image = get_ImageItemLocation(imageArray[imageNum]);
-	return(new_image);
+});
+
+function startShow(){
+	console.log("Starting");
+	timer = setInterval(function(){nextImage()}, 3000);
+	$('#play').addClass('pause');
+	$('#play').removeClass('play');
+	paused = false;
 }
 
-function getPrevImage(){
-	if(imageNum - 1 < 0){
-		imageNum = totalImages - 1;
-	}
-	else{
-	imageNum = (imageNum-1 % totalImages);
-	}
-	var new_image = get_ImageItemLocation(imageArray[imageNum]);
-	return new_image;
-}
-
-function prevImage(place){
-	clearTimeout(timerID);
-	timerID = setTimeout(recur_call, interval);
-	var new_image = getPrevImage();
-	document.getElementById(place).src = new_image;
-}
-
-function switchImage(place){
-	var new_image = getNextImage();
-	document.getElementById(place).src = new_image;
-	var recur_call = "switchImage('"+place+"')";
-	timerID = setTimeout(recur_call, interval);
-}
-
-function play(place){
-	if(paused){
-		switchImage(place);
-		paused = false;
-	}
-}
-
-function pause(){
-	clearTimeout(timerID);
+function stopShow(){
+	clearInterval(timer);
 	paused = true;
+	$('#play').removeClass('pause');
+	$('#play').addClass('play');
 }
+
+function nextImage(){
+	imageNum++;
+	if(imageNum > imageArray.length - 1){
+		imageNum = 0;
+	}
+	$('#slideShow').attr('src', imageDir + imageArray[imageNum]);
+}
+
+function prevImage(){
+	imageNum--;
+	if(imageNum < 0){
+		imageNum = imageArray.length - 1;
+	}
+	$('#slideShow').attr('src', imageDir + imageArray[imageNum]);	
+}
+
+
+
+
+

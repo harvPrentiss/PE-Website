@@ -3,10 +3,11 @@
 	<head class="group">
 		<link rel="stylesheet" href="Stylesheets/reset.css"/>
 		<link rel="stylesheet" href="Stylesheets/global.css"/>
+		<script src="Javascript/jquery-2.1.0.min.js"></script>
 		<script src="Javascript/slideshow.js"></script>
 	</head>
 
-	<body onLoad="switchImage('slideShow')">
+	<body>
 			<header class="group">
 				<div class="logoTag group">
 					<a class="logo" href="index.html">Prentiss Electric</a>
@@ -29,15 +30,15 @@
 				<img id="slideShow" src="" />
 
 				<menu class="group">
-					<button class="rw" onClick="prevImage('slideShow');">
+					<button class="rw" >
 						<div class="rev1"></div><div class="rev2"></div>
 					</button>
 
-					<button class="playBtn" onClick="play('slideShow')">
-						<div class="play"></div>
+					<button class="playBtn" >
+						<div id = "play" class="pause"></div>
 					</button>
 
-					<button class="ff" onClick="nextImage('slideShow');">
+					<button class="ff" >
 						<div class="forward1"></div><div class="forward2"></div>
 					</button>
 				</menu>
