@@ -23,10 +23,14 @@ $(document).ready(function(){
 
 	$('.ff').on('click', function(){
 		nextImage();
+		clearInterval(timer);
+		timer = setInterval(function(){nextImage()}, 3000);
 	});
 
 	$('.rw').on('click', function(){
 		prevImage();
+		clearInterval(timer);
+		timer = setInterval(function(){nextImage()}, 3000);
 	});
 
 	$('.playBtn').on('click', function(){
@@ -36,7 +40,7 @@ $(document).ready(function(){
 		else{
 			stopShow();
 		}
-	})
+	});
 
 });
 
