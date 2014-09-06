@@ -162,6 +162,7 @@ menu {
 	background-color: transparent;
 	border: none;
 	width: auto;
+	cursor: pointer;
 }
 
 .playBtn:focus{
@@ -200,6 +201,8 @@ menu {
 	border: none;
 	height: 40px;
 	width: auto;
+	cursor: pointer;
+}
 }
 
 .rw:focus{
@@ -213,6 +216,8 @@ menu {
 	border: none;
 	height: 40px;
 	width: auto;
+	cursor: pointer;
+}
 }
 
 .ff:focus{

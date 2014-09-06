@@ -14,13 +14,13 @@ $(document).ready(function(){
 	    	$('#E').removeClass('backFrontColorSwap');
 	    }
 	    else if($(this).attr('id') == "alex"){
-	    	$('.descriptionBox').html("<p>A tard who knows how to use pliers.</p>");
+	    	$('.descriptionBox').html("<p>A helper.</p>");
 	    	$('#A').addClass('backFrontColorSwap');
 	    	$('#H').removeClass('backFrontColorSwap');
 	    	$('#E').removeClass('backFrontColorSwap');
 	    }
 	    else if($(this).attr('id') == "eric"){
-	    	$('.descriptionBox').html("<p>An even bigger tard.</p>");
+	    	$('.descriptionBox').html("<p>Another helper.</p>");
 	    	$('#E').addClass('backFrontColorSwap');
 	    	$('#A').removeClass('backFrontColorSwap');
 	    	$('#H').removeClass('backFrontColorSwap');
