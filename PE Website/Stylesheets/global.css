@@ -3,7 +3,7 @@ html{
 }
 
 body {
-	background-color: hsl(0, 0%, 80%);
+	background-color: hsl(0, 0%, 50%);
 	margin: 0;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -13,10 +13,10 @@ body {
 header{
 	box-sizing: border-box;
 	display: block;
-	margin: 5px auto;
-	width: 80%;
+	margin: 5px auto 2px auto;
+	width: 75%;
 	height: auto;
-	background-color: hsl(0, 99%, 14%);
+	background-color: hsl(0, 0%, 80%);
 	padding-bottom: 10px;
 }
 
@@ -43,17 +43,22 @@ footer{
 
 #contentContainer{
 	box-sizing: border-box;
-	width: 80%;
-	margin: 30px auto;
-	padding: 15px;
-	background-color: hsl(0, 99%, 14%);
-	color: hsl(0, 0%, 90%);
+	width: 75%;
+	margin: 0 auto 30px auto;
+	padding: 25px;
+	background-color: hsl(0, 0%, 80%);
+	color: hsl(0, 0%, 0%);
+}
+
+.centerContainer{
+	text-align: center;
+	margin: 10px auto;
 }
 
 .logoTag{
 	margin: 5px auto;
 	padding: 0;
-	width: 600px;
+	width: 620px;
 	display: table;
 }
 
@@ -64,6 +69,8 @@ footer{
 	height: 200px;
 	position: relative;
 	width: 300px;
+	padding-top: 50px;
+	padding-left: 20px;
 }
 
 .logo{
@@ -82,11 +89,10 @@ footer{
 
 .tagLine{
 	font-size: 16pt;
-	color: hsl(0, 0%, 90%);
+	color: hsl(0, 0%, 0%);
 	text-align: center;
 	margin: 5px auto;
 	position: absolute;
-	top: 50%;
 }
 
 /* Navigation styles */
@@ -100,7 +106,7 @@ footer{
 	line-height: 60px;
 	padding: 0px 10px;
 	font-size: 14pt;
-	color: hsl(0, 99%, 14%);
+	color: hsl(0, 0%, 0%);
 	background: hsl(0, 0%, 90%);
 	border: 1px solid;
 	border-color: hsl(0, 0%, 90%);
@@ -108,12 +114,12 @@ footer{
 }
 
 .navListItem:visited{
-	color: hsl(0, 99%, 14%);
+	color: hsl(0, 0%, 0%);
 }
 
 .navListItem:hover{
 	font-style: italic;
-	border-color: hsl(0, 99%, 14%);
+	border-color: hsl(0, 0%, 0%);
 }
 
 .banner{
@@ -122,11 +128,6 @@ footer{
 	text-align: center;
 	height: 150px;
 	width: auto;
-}
-
-.centerContainer{
-	text-align: center;
-	margin: 10px auto;
 }
 
 
@@ -181,7 +182,7 @@ menu {
 }
 
 .play:hover{
-	border-color: transparent transparent transparent hsl(0, 99%, 14%);
+	border-color: transparent transparent transparent hsl(0, 0%, 0%);
 }
 
 .pause{
@@ -191,7 +192,7 @@ menu {
 }
 
 .pause:hover{
-	background-color: hsl(0, 99%, 14%);
+	background-color: hsl(0, 0%, 0%);
 }
 
 .rw{
@@ -237,7 +238,7 @@ menu {
 }
 
 .ff:hover .forward1, .ff:hover .forward2{
-	border-color: transparent transparent transparent hsl(0, 99%, 14%);
+	border-color: transparent transparent transparent hsl(0, 0%, 0%);
 }
 
 .forward2{
@@ -265,7 +266,7 @@ menu {
 }
 
 .rw:hover .rev1, .rw:hover .rev2{
-	border-color: transparent hsl(0, 99%, 14%) transparent transparent;
+	border-color: transparent hsl(0, 0%, 0%) transparent transparent;
 }
 
 .rev2{
@@ -375,14 +376,15 @@ menu {
 	box-sizing: border-box;
 	display: inline-block;
 	padding: 5px;	
-	color: hsl(0, 0%, 90%);
+	color: hsl(0, 0%, 0%);
 }
 
 .frmField{
 	background-color: hsl(0, 0%, 90%);
-	border: 2px solid hsl(0, 99%, 14%);
+	border: 2px solid hsl(0, 0%, 0%);
 	border-radius: 5px;
 	padding-left: 5px;
+	resize: none;
 }
 
 .frmField:focus{
@@ -394,7 +396,7 @@ menu {
 	box-sizing: border-box;
 	min-width: 85px;
 	font-size: 14pt;
-	color: hsl(0, 99%, 14%);
+	color: hsl(0, 0%, 0%);
 	background: hsl(0, 0%, 90%);
 	border: 1px solid;
 	border-color: hsl(0, 0%, 90%);
@@ -403,7 +405,7 @@ menu {
 }
 
 .frmBtns:hover{	
-	border-color: hsl(0, 99%, 14%);
+	border-color: hsl(0, 0%, 0%);
 	font-style: italic;
 }
 
@@ -423,4 +425,14 @@ menu {
 
 .bad{
 	color: red;
+}
+
+.workList{
+	list-style: disc;
+	margin-left: 20px;
+}
+
+.workListItem{
+	text-align: left;
+	margin-bottom: 5px;
 }
