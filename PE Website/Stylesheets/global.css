@@ -14,7 +14,7 @@ header{
 	box-sizing: border-box;
 	display: block;
 	margin: 5px auto 2px auto;
-	width: 75%;
+	width: 95%;
 	height: auto;
 	background-color: hsl(0, 0%, 80%);
 	padding-bottom: 10px;
@@ -43,7 +43,7 @@ footer{
 
 #contentContainer{
 	box-sizing: border-box;
-	width: 75%;
+	width: 95%;
 	margin: 0 auto 30px auto;
 	padding: 25px;
 	background-color: hsl(0, 0%, 80%);
