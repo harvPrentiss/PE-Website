@@ -16,8 +16,9 @@ header{
 	margin: 5px auto 2px auto;
 	width: 95%;
 	height: auto;
-	background-color: hsl(0, 0%, 80%);
+	background-color: hsl(0, 0%, 100%);
 	padding-bottom: 10px;
+	border-radius: 10px 10px 0 0;
 }
 
 nav{
@@ -46,8 +47,9 @@ footer{
 	width: 95%;
 	margin: 0 auto 30px auto;
 	padding: 25px;
-	background-color: hsl(0, 0%, 80%);
+	background-color: hsl(0, 23%, 69%);
 	color: hsl(0, 0%, 0%);
+	border-radius: 0 0 10px 10px;
 }
 
 .centerContainer{
@@ -76,19 +78,20 @@ footer{
 .logo{
 	display: block;
 	float: left;
-	background: url(../Images/newLogo.png) no-repeat;
-	width: 300px;
-	height: 200px;
+	background: url(../Images/PELogoSprite.png) no-repeat;
+	width: 242px;
+	height: 235px;
 	text-indent: -9999px;
 	margin: 5px auto 10px auto;
 }
 
 .logo:hover{
-	background-position: 0 0px;
+	background-position: 0 -236px;
 }
 
 .tagLine{
 	font-size: 16pt;
+	font-family: 'Laila', serif;
 	color: hsl(0, 0%, 0%);
 	text-align: center;
 	margin: 5px auto;
@@ -106,15 +109,15 @@ footer{
 	line-height: 60px;
 	padding: 0px 10px;
 	font-size: 14pt;
-	color: hsl(0, 0%, 0%);
-	background: hsl(0, 0%, 90%);
+	color: hsl(0, 0%, 100%);
+	background: hsl(0, 38%, 41%);
 	border: 1px solid;
 	border-color: hsl(0, 0%, 90%);
 	border-radius: 5px;
 }
 
 .navListItem:visited{
-	color: hsl(0, 0%, 0%);
+	color: hsl(0, 0%, 100%);
 }
 
 .navListItem:hover{
@@ -339,15 +342,15 @@ menu {
 }
 
 .HP{
-	background: url(../Images/hp3IconBlue.png) no-repeat;
+	background: url(../Images/newLogo.png) no-repeat;
 }
 
 .AP{
-	background: url(../Images/hp3IconGreen.png) no-repeat;
+	background: url(../Images/newLogo.png) no-repeat;
 }
 
 .EP{
-	background: url(../Images/hp3IconOrange.png) no-repeat;
+	background: url(../Images/newLogo.png) no-repeat;
 }
 
 .descriptionBox{
@@ -396,16 +399,16 @@ menu {
 	box-sizing: border-box;
 	min-width: 85px;
 	font-size: 14pt;
-	color: hsl(0, 0%, 0%);
-	background: hsl(0, 0%, 90%);
+	color: hsl(0, 0%, 100%);
+	background: hsl(0, 38%, 41%);
 	border: 1px solid;
-	border-color: hsl(0, 0%, 90%);
+	border-color: hsl(0, 38%, 41%);
 	border-radius: 5px;
 	padding: 10px 10px;
 }
 
 .frmBtns:hover{	
-	border-color: hsl(0, 0%, 0%);
+	border-color: hsl(0, 0%, 100%);
 	font-style: italic;
 }
 
