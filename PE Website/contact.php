@@ -11,7 +11,7 @@
 	<body>
 			<header class="group">
 				<div class="logoTag group">
-					<a class="logo" href="index.html">Prentiss Electric</a>
+					<a class="logo" href="index.php">Prentiss Electric</a>
 					<div class="logoRightBox">
 						<p class="tagline">PRENTISS ELECTRIC LLC<br> ELECTRICAL CONTRACTING<br>P.O. BOX 153<br> North Haven, CT 06473<br>
 						P & F (203)234-2611</p>
@@ -20,12 +20,13 @@
 
 				<nav class="nav">
 					<ul>
-						<li><a href="about.html" class="navListItem">About Us</a></li>
-						<li><a href="contact.html" class="navListItem">Contact</a></li>
+						<li><a href="about.php" class="navListItem">About Us</a></li>
+						<li><a href="contact.php" class="navListItem">Contact</a></li>
 						<li><a href="" class="navListItem">Testimonials</a></li>
-						<li><a href="photos.html" class="navListItem">Photos</a></li>
+						<li><a href="photos.php" class="navListItem">Photos</a></li>
 					</ul>
 				</nav>
+				<a href='https://www.facebook.com/pages/Prentiss-Electric-Llc/146810885479349' target="_blank" class='fbLink'><img src='Images/logo_facebook.png' /></a>
 			</header>
 
 			<div id="contentContainer" class="group">
@@ -34,7 +35,7 @@
 				<div class="centerContainer" class="group">
 					<h1>Contact Info</h1>
 					<h2>Phone/Fax: (203)234-2611</h2>
-
+					<a href='PEcoupon.pdf' target="_blank"><h2>Get a coupon!</h2></a>
 					<div class="emailSection">
 						<h2>Email Us</h2>
 						<!-- put in PHP emailer -->
@@ -49,6 +50,15 @@
 						</form>
 					</div>
 				</div>
+			</div>
+
+			<div id='visitCount'>
+				<?php
+					$datei = fopen("countlog.txt","r");
+					$count = fgets($datei,1000);
+					fclose($datei);
+					echo "<p class='counter'>Visitors :    <span class='countNum'>".$count."</span></p>";
+				?>
 			</div>
 	</body>
 </html>

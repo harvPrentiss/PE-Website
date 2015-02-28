@@ -1,3 +1,9 @@
+<?php
+
+include("pageCounter.php");
+
+?>
+
 <!DOCTYPE>
 <html>
 	<head class="group">
@@ -9,7 +15,7 @@
 	<body>
 			<header class="group">
 				<div class="logoTag group">
-					<a class="logo" href="index.html">Prentiss Electric</a>
+					<a class="logo" href="index.php">Prentiss Electric</a>
 					<div class="logoRightBox">
 						<p class="tagline">PRENTISS ELECTRIC LLC<br> ELECTRICAL CONTRACTING<br>P.O. BOX 153<br> North Haven, CT 06473<br>
 						P & F (203)234-2611</p>
@@ -18,12 +24,14 @@
 
 				<nav class="nav">
 					<ul>
-						<li><a href="about.html" class="navListItem">About Us</a></li>
-						<li><a href="contact.html" class="navListItem">Contact</a></li>
+						<li><a href="about.php" class="navListItem">About Us</a></li>
+						<li><a href="contact.php" class="navListItem">Contact</a></li>
 						<li><a href="" class="navListItem">Testimonials</a></li>
-						<li><a href="photos.html" class="navListItem">Photos</a></li>
+						<li><a href="photos.php" class="navListItem">Photos</a></li>
 					</ul>
 				</nav>
+
+				<a href='https://www.facebook.com/pages/Prentiss-Electric-Llc/146810885479349' target="_blank" class='fbLink'><img src='Images/logo_facebook.png' /></a>
 			</header>
 
 			<div id="contentContainer" class="group">	
@@ -43,6 +51,15 @@
 					<!-- To add new things to the list copy the following: <li class='workListItem'>Put your text here</li> 
 					-->
 				</ul>
+			</div>
+
+			<div id='visitCount'>
+				<?php
+					$datei = fopen("countlog.txt","r");
+					$count = fgets($datei,1000);
+					fclose($datei);
+					echo "<p class='counter'>Visitors :    <span class='countNum'>".$count."</span></p>";
+				?>
 			</div>
 	</body>
 </html>
